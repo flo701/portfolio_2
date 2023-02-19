@@ -1,0 +1,192 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+	line-height: 1.30;
+}
+
+/*************** HEADER ******************/
+nav {
+	padding: 15px 30px;
+	display: flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	position: relative; /*Nécessaire pour avoir l'ombre*/ 
+	box-shadow: 0 7px 20px #ded6d6;
+}
+
+nav h1 {
+	margin-right: 5px;
+}
+
+@media screen and (max-width: 600px){
+	nav h1 {
+		font-size: 1.8rem;
+	}
+}
+
+#hamburger {
+	display: none;
+}
+
+#links {
+	opacity:1;
+}
+
+@media screen and (max-width:1095px) {
+	#hamburger {
+		display: block;
+		cursor: pointer;
+	}
+
+	.fa-bars {
+		font-size: 2rem;
+		margin-right: 5px;
+		margin-left: 10px;
+	}
+
+	#links {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 122px;
+		right: -0.1%;
+		background-color: white;
+		opacity: 0;
+	}
+
+	#links a {
+		padding: 10px 17px;
+	}
+}
+
+@media screen and (min-width:321px) and (max-width: 601px) {
+	#links {
+		top: 105px;
+	} 
+}
+
+@media screen and (max-width: 320px) {
+	#links {
+		top: 141px;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	padding-left: 15px;
+	font-size: 1.1rem;
+	transition : all ease 0.5s;
+}
+
+nav a {
+	font-size: 1.4rem;
+}
+
+a:hover {
+	color: rgb(147, 145, 145);
+}
+
+header img{
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+/**************** MAIN ******************/
+main {
+	padding-bottom:27px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+#intro {
+	margin-top: 43px;
+	margin-bottom: 43px;
+}
+
+.projects {
+	padding-left:30px;
+	padding-right:30px;
+}
+
+span {
+	color: red;
+	font-size: 1rem;
+}
+
+#intro span {
+	color:red;
+	font-size: 1rem;
+}
+
+h2 {
+	margin-top: 45px;
+	margin-bottom: 43px;
+	display: flex;
+    justify-content: center;
+}
+
+h3 {
+	font-size: 1.3rem;
+	margin-top: 30px;
+	padding-top: 10px;
+}
+
+span.precision {
+	color :rgb(43, 0, 255);
+}
+
+/***************** FOOTER ********************/
+footer {
+	background-color: #f9f2ea;
+	text-align: center;
+	padding-top: 27px;
+	padding-bottom: 38px;
+}
+
+footer img {
+	width: 200px;
+	margin-bottom: 5px;
+	box-shadow: 0px 0px 10px white;
+}
+
+footer p {
+	margin-bottom: 25px;
+}
+
+@media screen and (max-width: 340px) {
+	.mail {
+		font-size: 1rem;
+	}
+}
+
+.fa-linkedin-in {
+	background-color: rgb(10, 102, 194);
+	color: white;
+	padding: 4px;
+    border-radius: 3px;
+	transition: ease 0.4s;
+}
+
+.fa-linkedin-in:hover {
+	background-color: rgb(10, 102, 194, 0.85);
+	transform: scale(1.04);
+}
+
+
+#scroll-to-top{
+	display: none;
+	position: fixed;
+	right: 4%;
+	bottom: 4%;
+	font-size: 1.4rem;
+	cursor: pointer;
+	transition : ease 0.5s;
+}
+
+#scroll-to-top:hover{
+	color: rgb(147, 145, 145);
+}
