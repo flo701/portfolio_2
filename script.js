@@ -3,8 +3,8 @@ var menu = document.getElementById('links')
 var scrollToTop = document.getElementById('scroll-to-top')
 
 hamburger.addEventListener('click', ()=> {
-    if ( window.matchMedia("(min-width: 1096px)").matches ){menu.style.opacity=1} 
-    else if(window.matchMedia("(max-width: 1095px)").matches && menu.style.opacity==1){
+    if ( window.matchMedia("(min-width: 1281px)").matches ){menu.style.opacity=1} 
+    else if(window.matchMedia("(max-width: 1280px)").matches && menu.style.opacity==1){
         menu.style.opacity=0
         menu.style.transition='all ease 2s'
     } 
