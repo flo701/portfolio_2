@@ -8,7 +8,7 @@ hamburger.addEventListener('click', ()=> {
         menu.style.opacity=0
         menu.style.transition='all ease 2s'
     } 
-    else if( menu.style.opacity==0 || window.matchMedia("(min-width: 1096px)").matches ) {
+    else if( menu.style.opacity==0 || window.matchMedia("(min-width: 1281px)").matches ) {
         menu.style.opacity=1
         menu.style.transition='all ease-out 0.8s'
     } 
