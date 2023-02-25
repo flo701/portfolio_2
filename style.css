@@ -34,7 +34,7 @@ nav h1 {
 	opacity:1;
 }
 
-@media screen and (max-width:1095px) {
+@media screen and (max-width:1280px) {
 	#hamburger {
 		display: block;
 		cursor: pointer;
